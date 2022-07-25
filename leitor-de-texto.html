@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="css/leitura.css" />
+
+    <title>Xandão - Assistente pessoal</title>
+  </head>
+
+  <body>
+    <!-- Inicio do cabeçalho -->
+    <header class="mb-3 bg-info p-3">
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+          <a
+            class="navbar-brand"
+            href="index.html"
+            style="color: white; font-size: 2.5em"
+          >
+            <img src="imagens/logo.png" width="50" alt="Logo Super Xandão" /> |
+            Xandão Virtual
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- Fim cabeçalho -->
+
+    <div class="conteudo">
+      <!-- Inicio da aplicação -->
+      <h3 class="sem-suporte">
+        Seu Browser não suporta toda essa tecnologia. Tente abrir o
+        <strong style="color: #17a2b8">Xandão Assitente Virtual</strong>
+        no Google Chrome 👍
+      </h3>
+      <div class="aplicacao">
+        <div>
+          <h1 class="mb-4">Leitor de texto</h1>
+
+          <div>
+            <select class="rounded" name="voz" id="voices">
+              <option value="">Select A Voice</option>
+            </select>
+          </div>
+
+          <div>
+            <textarea
+              id="area-anotacoes"
+              class="rounded"
+              name="text"
+              cols="100"
+              rows="20"
+              placeholder="Cole aqui o texto que quer ouvir"
+            >
+            </textarea>
+          </div>
+
+          <div class="black">
+            <label for="rate">Velocidade:</label>
+            <input
+              name="rate"
+              class="mr-5"
+              type="range"
+              min="0"
+              max="3"
+              value="1"
+              step="0.1"
+            />
+
+            <label for="pitch">Ritmo:</label>
+            <input name="pitch" type="range" min="0" max="2" step="0.1" />
+          </div>
+
+          <div class="mb-4 mt-3">
+            <button id="pausar" class="btn btn-info botao mr-5">Pausar</button>
+            <button id="ditar" class="btn btn-info botao">Começar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim da aplicação -->
+
+    <footer class="p-4" style="background-color: aliceblue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="d-flex justify-content-center">
+              <p class="preto">
+                Seminario de analise e desenvolvimento de sistemas - 2020
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/leitura.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

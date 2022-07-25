@@ -1,0 +1,43 @@
+.conteudo {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sem-suporte {
+  display: none;
+  font-size: 1.2rem;
+  color: black;
+  margin-top: 35px;
+}
+
+#area-anotacoes {
+  background-color: whitesmoke;
+  margin: 20px 0px;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .conteudo {
+      padding: 50px 25px;
+  }
+
+  button {
+      margin-bottom: 10px;
+      display: block;
+  }
+
+}
+/* Novas tags */
+.botao{
+  width: 400px;
+}
+.preto{
+  color: black;
+}
+#voices{
+  color: white;
+  width: 850px;
+  background-color: #17A2B8;
+  padding: 15px
+}
